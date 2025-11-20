@@ -10,14 +10,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
+    margin: 0;
+    padding: 0;
 }
 
 div#interface {
-    width: 900px;
+    width: 100%;
+    max-width: 1100px;
     background-color: #ffffff;
-    margin: -20px auto 0px auto;
+    margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
+    box-sizing: border-box;
 }
 
 p {
@@ -38,14 +42,22 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 920px;
-    top: 75px;
+    right: 15px;
+    top: 20px;
+    max-width: 140px;
+    width: 20vw;
+    min-width: 90px;
+    height: auto;
 }
 
 header#cabecalho {
+    position: relative;
     border-bottom: 1px #606060 solid;
-    height: 150px;
-    background: url("../_image/glass-logo-peq.jpg") no-repeat 0px 80px;
+    min-height: 150px;
+    background: url("../_image/glass-logo-peq.jpg") no-repeat 10px bottom;
+    background-size: auto 70px;
+    padding: 20px 15px 50px;
+    box-sizing: border-box;
 }
 
 header#cabecalho h1 {
@@ -113,21 +125,33 @@ figure.foto-legenda:hover figcaption {
 
 nav#menu {
     display: block;
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 10px;
 }
 
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 10px;
+    row-gap: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 nav#menu li {
     display: inline-block;
     background-color: #dddddd;
-    padding: 10px;
-    margin: 1px;
+    padding: 10px 12px;
+    margin: 0;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 4px;
     -webkit-transition: background-color 1s;
     -moz-transition: background-color 1s;
     -o-transition: background-color 1s;
@@ -156,10 +180,11 @@ nav#menu a:hover {
 
 section#corpo {
     display: block;
-    width: 500px;
-    float: left;
-    border-right: 1px solid #606060;
-    padding-right: 15px;
+    width: 100%;
+    float: none;
+    border-right: none;
+    padding-right: 0;
+    box-sizing: border-box;
 }
 
 article#noticia-principal h2 {
@@ -196,6 +221,8 @@ table#tabelaspec {
     border-spacing: 0px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 100%;
 }
 
 table#tabelaspec td {
@@ -233,13 +260,14 @@ table#tabelaspec caption span {
 
 aside#lateral {
     display: block;
-    width: 350px;
-    float: right;
+    width: 100%;
+    float: none;
     background-color: #dddddd;
     padding: 10px;
     margin-top: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    
+    box-sizing: border-box;
+
 }
 
 aside#lateral h1 {
@@ -264,4 +292,22 @@ footer#rodape {
 
 footer#rodape p {
     text-align: center;
+}
+
+@media (min-width: 980px) {
+    header#cabecalho {
+        padding-bottom: 40px;
+    }
+
+    section#corpo {
+        width: 60%;
+        float: left;
+        border-right: 1px solid #606060;
+        padding-right: 15px;
+    }
+
+    aside#lateral {
+        width: calc(40% - 20px);
+        float: right;
+    }
 }
