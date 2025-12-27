@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,inital-scale=1.0">
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="../css/media.css" />
+</head>
+<script language="javascript" src="../javascript/funcoes.js"></script>
+
+<body>
+	<div id="interface">
+
+		<header id="cabecalho">
+			<hgroup>
+				<h1>Google Glass</h1>
+				<h2>A revolução do Google está chegando</h2>
+			</hgroup>
+
+			<img id="icone" src="../image/multimidia.png" />
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul onmouseout="mudaFoto('../image/fotos.png')">
+					<li onmouseover="mudaFoto('../image/home.png')"
+						onmouseout="mudaFoto('../image/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+					<li onmouseover="mudaFoto('../image/especificacoes.png')"
+						onmouseout="mudaFoto('../image/glass-oculos-preto-peq.png')"><a
+							href="specs.html">Especificações</a></li>
+					<li onmouseover="mudaFoto('../image/fotos.png')"
+						onmouseout="mudaFoto('../image/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+					<li onmouseover="mudaFoto('../image/multimidia.png')"
+						onmouseout="mudaFoto('../image/glass-oculos-preto-peq.png')"><a
+							href="multimidia.html">Multimídia</a></li>
+					<li onmouseover="mudaFoto('../image/contato.png')"
+						onmouseout="mudaFoto('../image/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale
+							conosco</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<section id="corpo-full">
+			<article>
+				<header id="cabecalho-artigo">
+					<hgroup>
+						<h3 id="direita">Glass > Multimídia</h3>
+						<h1>Sons e Vídeos</h1>
+						<h2>por João Meneses Costa</h2>
+						<h3 id="esquerda"><sup>Atualizado em 23/Abril/2013</sup></h3>
+					</hgroup>
+				</header>
+
+				<div id="tv-radio">
+					<audio id="musica" controls="controls">
+						<source src="../media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg" />
+						<source src="../media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac" />
+						<source src="../media/2009-lovers-carvings-bibio.ogg" type="audio/ogg" />
+						Desculpa, não foi possivel carregar o audio
+					</audio>
+					<video id="filme" controls="controls" poster="../image/video-mini03">
+						<source src="../media/getting-started.mp4" type="video/mp4" />
+						<source src="../media/getting-started.web.m" type="video/webm" />
+						<source src="../media/getting-started.ogg" type="video/ogg" />
+						Desculpa, não foi possivel carregar o video
+					</video>
+				</div>
+			</article>
+		</section>
+
+		<footer id="rodape">
+			<p>Copyright &copy; 2024 - by João Meneses Costa <br />
+				<a href="https://https://github.com/jaomcosta"target="_blank">GitHub</a>
+			</p>
+		</footer>
+	</div>
+</body>
+
+</html>
